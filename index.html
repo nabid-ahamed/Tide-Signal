@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#10110e" />
+    <meta name="description" content="Tide Signal is a field guide to the changing edge of the sea." />
+    <title>Tide Signal / An observatory for the moving edge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Fira+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Tide Signal home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>TIDE<br />SIGNAL</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#observatory">Observatory</a>
+        <a href="#field-notes">Field notes</a>
+        <a href="#archive">Archive</a>
+      </nav>
+      <button class="menu-button" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="live-dot"></span> Signal received / 04:17 UTC</p>
+          <h1>The edge<br /><em>is moving.</em></h1>
+          <p class="hero-intro">A living field guide to the places where land gives way, and what the water is trying to tell us.</p>
+          <a class="arrow-link" href="#observatory">Enter the observatory <span>↘</span></a>
+        </div>
+        <div class="hero-art" aria-label="Animated tide line visualization">
+          <div class="sun-orb"></div>
+          <div class="coordinate coordinate-top">41° 43′ N<br />70° 17′ W</div>
+          <div class="coordinate coordinate-bottom">ATLANTIC / NORTH<br /><span>LOCAL DEPTH 04.8M</span></div>
+          <svg class="hero-wave" viewBox="0 0 720 440" role="img" aria-label="A bright waveform crossing a dark field">
+            <defs><linearGradient id="waveGradient" x1="0" x2="1"><stop offset="0" stop-color="#dce84e"/><stop offset="0.52" stop-color="#f9f7ef"/><stop offset="1" stop-color="#f07d5d"/></linearGradient></defs>
+            <path class="wave-shadow" d="M0 280 C90 210 110 335 194 256 S310 160 380 246 S495 350 548 215 S650 130 720 164" />
+            <path class="wave-line" d="M0 258 C90 188 110 313 194 234 S310 138 380 224 S495 328 548 193 S650 108 720 142" />
+            <path class="wave-line wave-line-secondary" d="M0 304 C90 234 110 359 194 280 S310 184 380 270 S495 374 548 239 S650 154 720 188" />
+          </svg>
+          <div class="art-caption">A quiet measurement<br />of a very loud future.</div>
+        </div>
+        <div class="hero-index">01 <span>/</span> 04</div>
+      </section>
+
+      <div class="ticker" aria-label="Tide signal summary">
+        <div class="ticker-track"><span>NO SHORE IS STATIC</span><b>✦</b><span>NO SHORE IS STATIC</span><b>✦</b><span>NO SHORE IS STATIC</span><b>✦</b><span>NO SHORE IS STATIC</span><b>✦</b></div>
+      </div>
+
+      <section class="observatory section-wrap" id="observatory">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 / The observatory</p>
+          <h2>Read the water<br /><span>between the lines.</span></h2>
+          <p class="section-lede">Tide Signal pairs live coastal observations with the long view. No panic. No polish. Just the pattern, in plain sight.</p>
+        </div>
+        <div class="signal-board reveal">
+          <div class="board-top"><span>STATION / CAPE COD 07</span><span class="status"><span class="live-dot"></span> TRANSMITTING</span></div>
+          <div class="board-reading"><strong id="tideValue">+1.82</strong><span>m</span><small id="tideState">RISING / ABOVE SEASONAL MEAN</small></div>
+          <div class="chart-wrap"><svg id="tideChart" viewBox="0 0 760 260" preserveAspectRatio="none" role="img" aria-label="Tide level over the next twelve hours"></svg><div class="chart-axis"><span>NOW</span><span>+03H</span><span>+06H</span><span>+09H</span><span>+12H</span></div></div>
+          <div class="board-bottom"><span>LAT 41.727 / LONG -70.283</span><span>UPDATED 12 SECONDS AGO</span><span>⌀ 98.4% CONFIDENCE</span></div>
+          <div class="chart-controls" role="group" aria-label="Tide chart controls">
+            <button class="state-button active" data-state="rising">Rising</button>
+            <button class="state-button" data-state="high">High tide</button>
+            <button class="state-button" data-state="falling">Falling</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="manifesto section-wrap reveal">
+        <p class="big-quote">“The coast is not a line.<br /><span>It is a conversation.</span>”</p>
+        <div class="quote-meta"><span>— DR. MIRA SOLANO</span><span>COASTAL SYSTEMS / 2039</span></div>
+      </section>
+
+      <section class="field-notes section-wrap" id="field-notes">
+        <div class="section-heading split-heading reveal"><div><p class="eyebrow">02 / Field notes</p><h2>Small signals.<br /><span>Big shifts.</span></h2></div><a class="text-link" href="#archive">View all notes <span>↗</span></a></div>
+        <div class="notes-grid">
+          <article class="note-card note-card-tall reveal"><div class="note-image tide-pool"><span>01</span><div class="pool-ring"></div><div class="pool-glint"></div></div><div class="note-content"><p class="note-tag">LOW TIDE / PORTLAND</p><h3>The pools remember</h3><p>At dusk, the rock pools hold a different temperature than the sea. A tiny delay, repeated across a century.</p><a href="#archive" class="note-link">Open note <span>↗</span></a></div></article>
+          <article class="note-card reveal"><div class="note-image salt-marsh"><span>02</span><div class="marsh-sun"></div><div class="marsh-line"></div></div><div class="note-content"><p class="note-tag">SALTMARSH / 06:12</p><h3>Where the reeds lean</h3><p>Wind is not the only force teaching the marsh a new direction.</p><a href="#archive" class="note-link">Open note <span>↗</span></a></div></article>
+          <article class="note-card reveal"><div class="note-image night-swell"><span>03</span><div class="moon"></div><div class="swell"></div></div><div class="note-content"><p class="note-tag">NIGHT WATCH / NORTH SEA</p><h3>Listening in the dark</h3><p>Buoys don't sleep. Neither does the data passing through them.</p><a href="#archive" class="note-link">Open note <span>↗</span></a></div></article>
+        </div>
+      </section>
+
+      <section class="archive section-wrap" id="archive">
+        <div class="archive-intro reveal"><p class="eyebrow">03 / The archive</p><h2>A record of<br /><span>the in-between.</span></h2><p>Collected from listening stations, shore walks, and people who know the water by heart.</p></div>
+        <div class="archive-list reveal">
+          <button class="archive-row" data-filter="2024"><span>2024 / 08</span><strong>When the beach arrived at the road</strong><span class="row-place">Martha's Vineyard</span><span class="row-arrow">↗</span></button>
+          <button class="archive-row" data-filter="2023"><span>2023 / 11</span><strong>A field guide to soft ground</strong><span class="row-place">Norfolk Broads</span><span class="row-arrow">↗</span></button>
+          <button class="archive-row" data-filter="2022"><span>2022 / 03</span><strong>The last winter of clear ice</strong><span class="row-place">Gulf of Bothnia</span><span class="row-arrow">↗</span></button>
+          <button class="archive-row" data-filter="2021"><span>2021 / 19</span><strong>Notes from a drowned forest</strong><span class="row-place">Louisiana Delta</span><span class="row-arrow">↗</span></button>
+        </div>
+        <div class="archive-toast" role="status" aria-live="polite">Signal logged. The archive is listening.</div>
+      </section>
+
+      <section class="closing section-wrap reveal"><p class="eyebrow">04 / Keep listening</p><h2>Somewhere,<br /><em>the water is changing.</em></h2><p>Get one considered signal in your inbox every month. No noise. Unsubscribe whenever the tide turns.</p><form class="signup-form"><label class="sr-only" for="email">Email address</label><input id="email" type="email" placeholder="your@email.com" required /><button type="submit">Subscribe <span>↗</span></button></form><p class="form-note">FIELD NOTES / 1× MONTHLY / NO TRACKING</p></section>
+    </main>
+
+    <footer class="site-footer"><div class="footer-brand">TIDE<br />SIGNAL</div><div><p class="footer-label">A project for the moving edge.</p><p>Built from public data, patient observation,<br />and a stubborn belief in paying attention.</p></div><div class="footer-links"><a href="#observatory">Observatory</a><a href="#field-notes">Field notes</a><a href="#archive">Archive</a></div><div class="footer-end">© 2039<br />ALL TIDES RESERVED</div></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
